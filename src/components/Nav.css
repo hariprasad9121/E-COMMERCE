@@ -1,0 +1,104 @@
+/* Navbar Styles */
+.navbar {
+  padding: 10px 30px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-links a {
+  padding: 8px 14px;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+/* Dark Mode Toggle Button Style */
+.dark-mode-toggle {
+  padding: 8px 16px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+/* Dark mode background & text */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Optional: style anchor tags or inputs in dark mode */
+body.dark-mode a {
+  color: #ffa64d;
+}
+/* === Global Dark Mode Styles === */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode a {
+  color: #ffa64d;
+}
+
+/* Dark navbar styling */
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+  color: #fff;
+}
+
+/* Optional button override */
+.dark-mode-toggle {
+  padding: 8px 16px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #e65c00;
+}
